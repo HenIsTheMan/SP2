@@ -4,7 +4,7 @@ bool Vector3::IsEqual(float a, float b) const{
 	return a - b <= Math::EPSILON && b - a <= Math::EPSILON;
 }
 
-Vector3::Vector3(float a, float b, float c): x(a), y(b), z(c){}
+Vector3::Vector3(float a, float b, float c): x(a), y(b), z(c){} //Default constructor
 Vector3::Vector3(const Vector3 &RHS) : x(RHS.x), y(RHS.y), z(RHS.z){} //Copy constructor
 Vector3::~Vector3(){}
 
